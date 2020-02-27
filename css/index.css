@@ -1,10 +1,52 @@
+.desktop-div {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  background-color: #1d2124;
+  color: #FFFFFF;
+}
+.button {
+  background-color: #3fbca6;
+  font-weight: bold;
+  padding: 3% 5%;
+  border-radius: 60px;
+}
+.content {
+  width: 80%;
+  max-width: 1080px;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  background-color: #1d2124;
+  color: #FFFFFF;
+}
 .product {
   display: flex;
   flex-direction: row;
 }
 .product img {
-  width: 40%;
+  width: 50%;
 }
 .product p {
-  width: 40%;
+  width: 50%;
+}
+nav {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  background-color: #1d2124;
+  color: #FFFFFF;
+  justify-content: space-evenly;
+}
+nav a {
+  background-color: #3fbca6;
+  font-weight: bold;
+  padding: 3% 5%;
+  border-radius: 60px;
+}
+* {
+  font-family: 'Source Sans Pro';
+}
+a {
+  color: #c9e8a2;
 }
