@@ -1,0 +1,10 @@
+.product {
+  display: flex;
+  flex-direction: row;
+}
+.product img {
+  width: 40%;
+}
+.product p {
+  width: 40%;
+}
