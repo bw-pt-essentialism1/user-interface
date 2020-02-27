@@ -1,4 +1,9 @@
+body{
+    background-color: @background;
+}
 .content{
+    padding-top:5%;
+    padding-bottom:5%;
     margin:auto;
     width:80%;
     max-width:1080px;
@@ -8,9 +13,27 @@
     display:flex;
     flex-direction:row;
     img{
-        width:50%;
+        // width:100%;
     }
     p{
         width:50%;
     }
+    div{
+        display:flex;
+        margin:auto;
+        flex-direction:column;
+        p{
+            margin:auto;
+        }
+        a{
+            width:30%;
+            margin:auto;
+            text-align: center;
+            margin-top:4%;
+            font-size:1.4rem;
+        }
+    }
+}
+footer{
+    display:none;
 }

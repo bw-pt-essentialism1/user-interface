@@ -8,10 +8,17 @@
 .button {
   background-color: #3fbca6;
   font-weight: bold;
-  padding: 3% 5%;
+  padding: 1% 7%;
   border-radius: 60px;
+  color: #1d2124;
+  text-decoration: none;
+}
+body {
+  background-color: #1d2124;
 }
 .content {
+  padding-top: 5%;
+  padding-bottom: 5%;
   width: 80%;
   max-width: 1080px;
   display: flex;
@@ -24,11 +31,26 @@
   display: flex;
   flex-direction: row;
 }
-.product img {
-  width: 50%;
-}
 .product p {
   width: 50%;
+}
+.product div {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+}
+.product div p {
+  margin: auto;
+}
+.product div a {
+  width: 30%;
+  margin: auto;
+  text-align: center;
+  margin-top: 4%;
+  font-size: 1.4rem;
+}
+footer {
+  display: none;
 }
 nav {
   display: flex;
@@ -37,12 +59,6 @@ nav {
   background-color: #1d2124;
   color: #FFFFFF;
   justify-content: space-evenly;
-}
-nav a {
-  background-color: #3fbca6;
-  font-weight: bold;
-  padding: 3% 5%;
-  border-radius: 60px;
 }
 * {
   font-family: 'Source Sans Pro';
