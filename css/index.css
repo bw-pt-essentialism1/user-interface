@@ -234,15 +234,24 @@ nav a:hover {
   margin-top: 3%;
 }
 .person-container .person {
-  width: 25%;
+  width: 20%;
   justify-content: center;
   align-content: center;
+  padding-bottom: 5%;
 }
 .person-container .person h2 {
   font-size: 2.4rem;
+  padding: 2%;
+  padding-bottom: 5%;
+  color: #3fbca6;
+}
+.person-container .person h3 {
+  font-weight: normal;
+  font-size: 1.6rem;
+  padding: 0.3rem;
 }
 .person-container .person p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   padding-bottom: 5%;
 }
 .person-container .person a {
