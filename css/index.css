@@ -198,6 +198,13 @@ body {
   margin-top: 4%;
   font-size: 1.4rem;
 }
+@media (max-width: 500px) {
+  .product {
+    max-width: 450px;
+    width: 100%;
+    flex-direction: column;
+  }
+}
 footer {
   display: none;
 }
@@ -214,6 +221,14 @@ nav {
   align-content: center;
   padding-bottom: 0.4rem;
   border-bottom: dotted #E2e2e2 0.2rem;
+  height: 5%;
+}
+nav img {
+  padding: 1% 0;
+  padding-top: 0;
+  vertical-align: middle;
+  height: 1.5rem;
+  text-align: center;
 }
 nav a {
   padding: 1% 0;
@@ -223,6 +238,18 @@ nav a {
 nav a:hover {
   color: #E2e2e2;
 }
+nav a .button {
+  padding: 1% 0;
+}
+@media (max-width: 500px) {
+  nav {
+    justify-content: space-evenly;
+    padding-top: 5%;
+  }
+  nav .desktopOnly {
+    display: none;
+  }
+}
 .person-container {
   max-width: 1080px;
   display: flex;
@@ -231,13 +258,13 @@ nav a:hover {
   background-color: #1d2124;
   color: #FFFFFF;
   justify-content: space-evenly;
-  margin-top: 3%;
 }
 .person-container .person {
   width: 20%;
   justify-content: center;
   align-content: center;
   padding-bottom: 5%;
+  margin-top: 3%;
 }
 .person-container .person h2 {
   font-size: 2.4rem;
@@ -268,6 +295,24 @@ nav a:hover {
 }
 .person-container .person img {
   width: 100%;
+}
+@media (max-width: 500px) {
+  .person-container .person img {
+    width: 20%;
+  }
+}
+@media (max-width: 500px) {
+  .person-container .person {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .person-container {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 a {
   color: #c9e8a2;

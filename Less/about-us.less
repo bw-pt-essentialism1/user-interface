@@ -29,8 +29,19 @@
         }
         img{
             width:100%;
-        }
-    }
+            @media (max-width:500px){
+                width:20%;
+            }
+        }//img
     margin-top:3%;
-
+    @media (max-width:500px){
+        display:flex;
+        flex-direction:row;
+        width:100%;
+    }
+}//person
+@media (max-width:500px){
+    flex-direction:column;
+    width:100%;
 }
+}//person container

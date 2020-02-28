@@ -8,6 +8,17 @@ nav{
     align-content: center;
     padding-bottom:.4rem;
     border-bottom:dotted @form-field .2rem;
+    height:5%;
+    
+    img{
+        // padding-bottom:1%;
+        padding:1% 0;
+        padding-top:0;
+        vertical-align:middle;
+        height:1.5rem;
+        text-align: center;
+        
+    }
     a{
         // width:25%;
         padding:1% 0;
@@ -15,6 +26,17 @@ nav{
         text-decoration: none;
         &:hover{
             color:@form-field;
+        }
+    .button{
+        padding:1% 0;
+    }
+    }
+    @media(max-width: 500px){
+        justify-content: space-evenly;
+        padding-top:5%;
+        // padding-bottom:2%;
+        .desktopOnly{
+            display:none;
         }
     }
 }
