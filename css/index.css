@@ -142,6 +142,9 @@ table {
   color: #1d2124;
   text-decoration: none;
 }
+.button:hover {
+  color: #E2e2e2;
+}
 body {
   background-color: #1d2124;
 }
@@ -167,6 +170,23 @@ body {
   display: flex;
   margin: auto;
   flex-direction: column;
+  margin-top: 5%;
+}
+.product div .logo {
+  margin-bottom: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+.product div .logo img {
+  height: 2.4rem;
+  padding: 2%;
+}
+.product div h1 {
+  margin: auto;
+  padding: 2%;
+  font-size: 2.4rem;
 }
 .product div p {
   margin: auto;
@@ -196,6 +216,9 @@ nav a {
   padding: 1% 0;
   text-align: center;
   text-decoration: none;
+}
+nav a:hover {
+  color: #E2e2e2;
 }
 a {
   color: #c9e8a2;
