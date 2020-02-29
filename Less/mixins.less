@@ -1,0 +1,21 @@
+// mixins here 
+
+.desktop-div {
+    display:flex;
+    width:90%;
+    margin:auto;
+    background-color: @background;
+    color:@text;
+}
+
+.button{
+    background-color:@button;
+    font-weight:bold;
+    padding:1% 7%;
+    border-radius:60px;
+    color:@background;
+    text-decoration: none;
+        &:hover{
+            color:@form-field;
+        }
+}

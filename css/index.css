@@ -1,0 +1,363 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: 'Source Sans Pro';
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* end reset */
+.desktop-div {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  background-color: #1d2124;
+  color: #FFFFFF;
+}
+.button {
+  background-color: #3fbca6;
+  font-weight: bold;
+  padding: 1% 7%;
+  border-radius: 60px;
+  color: #1d2124;
+  text-decoration: none;
+}
+.button:hover {
+  color: #E2e2e2;
+}
+body {
+  background-color: #1d2124;
+}
+.content {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 80%;
+  max-width: 1080px;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  background-color: #1d2124;
+  color: #FFFFFF;
+}
+.product {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.product a {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  justify-content: center;
+}
+@media (max-width:500px) {
+  .product a {
+    width: 80%;
+  }
+}
+.product p {
+  width: 75%;
+}
+@media (max-width:500px) {
+  .product p {
+    width: 100%;
+  }
+}
+.product div {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  margin-top: 5%;
+  width: 50%;
+}
+@media (max-width:500px) {
+  .product div {
+    width: 80%;
+  }
+}
+.product div .logo {
+  margin-bottom: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+.product div .logo img {
+  height: 2.4rem;
+  padding: 2%;
+}
+.product div h1 {
+  margin: auto;
+  padding: 2%;
+  font-size: 2.4rem;
+}
+.product div p {
+  margin: auto;
+}
+.product div a {
+  width: 30%;
+  margin: auto;
+  text-align: center;
+  margin-top: 4%;
+  font-size: 1.4rem;
+}
+@media (max-width: 500px) {
+  .product div a {
+    width: 75%;
+    margin-bottom: 3%;
+    font-size: 2rem;
+    padding: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .product {
+    max-width: 450px;
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+}
+footer {
+  display: none;
+}
+nav {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  background-color: #1d2124;
+  color: #FFFFFF;
+  max-width: 1080px;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  align-content: center;
+  padding-bottom: 0.4rem;
+  padding-top: 0.4rem;
+  border-bottom: dotted #E2e2e2 0.2rem;
+}
+nav img {
+  padding: 1% 0;
+  padding-top: 0;
+  vertical-align: middle;
+  height: 1.5rem;
+  text-align: center;
+}
+nav a {
+  padding: 1% 0;
+  text-align: center;
+  text-decoration: none;
+  align-content: center;
+}
+nav a:hover {
+  color: #E2e2e2;
+}
+nav a .button {
+  padding: 1% 0;
+  margin: 1%;
+}
+@media (max-width: 500px) {
+  nav {
+    justify-content: space-evenly;
+    padding-top: 5%;
+  }
+  nav .desktopOnly {
+    display: none;
+  }
+}
+.person-container {
+  max-width: 1080px;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  background-color: #1d2124;
+  color: #FFFFFF;
+  justify-content: space-evenly;
+}
+.person-container .person {
+  width: 20%;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 5%;
+  margin-top: 3%;
+}
+@media (max-width:500px) {
+  .person-container .person {
+    width: 100%;
+  }
+}
+.person-container .person h2 {
+  font-size: 2.4rem;
+  padding: 2%;
+  padding-bottom: 5%;
+  color: #3fbca6;
+  text-align: center;
+}
+.person-container .person h3 {
+  font-weight: normal;
+  font-size: 1.6rem;
+  padding: 0.3rem;
+  color: #cccccc;
+}
+.person-container .person p {
+  font-size: 1.2rem;
+  padding-bottom: 8%;
+  padding: 2%;
+}
+.person-container .person a {
+  display: block;
+  text-align: center;
+  background-color: #3fbca6;
+  font-weight: bold;
+  padding: 1% 7%;
+  border-radius: 60px;
+  color: #1d2124;
+  text-decoration: none;
+  padding: 3% 10%;
+  margin: 3%;
+}
+.person-container .person a:hover {
+  color: #E2e2e2;
+}
+.person-container .person img {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .person-container .person img {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media (max-width: 500px) {
+  .person-container .person {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .person-container {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+a {
+  color: #c9e8a2;
+}
