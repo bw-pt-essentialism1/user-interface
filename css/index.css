@@ -209,7 +209,6 @@ footer {
   display: none;
 }
 nav {
-  padding-top: 1%;
   display: flex;
   width: 90%;
   margin: auto;
@@ -220,8 +219,8 @@ nav {
   font-size: 1.6rem;
   align-content: center;
   padding-bottom: 0.4rem;
+  padding-top: 0.4rem;
   border-bottom: dotted #E2e2e2 0.2rem;
-  height: 5%;
 }
 nav img {
   padding: 1% 0;
@@ -234,12 +233,14 @@ nav a {
   padding: 1% 0;
   text-align: center;
   text-decoration: none;
+  align-content: center;
 }
 nav a:hover {
   color: #E2e2e2;
 }
 nav a .button {
   padding: 1% 0;
+  margin: 1%;
 }
 @media (max-width: 500px) {
   nav {
