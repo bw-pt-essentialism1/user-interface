@@ -253,6 +253,14 @@ nav {
   padding-top: 0.4rem;
   border-bottom: dotted #E2e2e2 0.2rem;
 }
+nav div {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+nav div .button {
+  font-size: 1.8rem;
+}
 nav img {
   padding: 1% 0;
   padding-top: 0;
@@ -269,9 +277,13 @@ nav a {
 nav a:hover {
   color: #E2e2e2;
 }
+nav a .signup {
+  font-size: 1.2rem;
+}
 nav a .button {
   padding: 1% 0;
   margin: 1%;
+  width: 85%;
 }
 @media (max-width: 500px) {
   nav {

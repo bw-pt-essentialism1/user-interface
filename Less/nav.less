@@ -10,7 +10,15 @@ nav{
     padding-top:.4rem;
     border-bottom:dotted @form-field .2rem;
     // height:8%;
-    
+    div{
+        display:flex;
+        flex-direction: column;
+        width:30%;
+        
+        .button{
+            font-size:1.8rem;
+        }
+    }
     img{
         // padding-bottom:1%;
         padding:1% 0;
@@ -29,9 +37,14 @@ nav{
         &:hover{
             color:@form-field;
         }
+        .signup{
+            font-size:1.2rem;
+        }
     .button{
         padding:1% 0;
         margin:1%;
+        width:85%;
+        
     }
     }
     @media(max-width: 500px){
