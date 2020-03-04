@@ -384,6 +384,11 @@ content div h2 {
   font-size: 2rem;
   padding: 1%;
 }
+@media (max-width:500px) {
+  content div h2 {
+    font-size: 1.6rem;
+  }
+}
 content div h3 {
   color: #c9e8a2;
   font-size: 1.5rem;
