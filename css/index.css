@@ -370,6 +370,34 @@ nav a .button {
     width: 100%;
   }
 }
+content div {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  flex-direction: column;
+  color: #FFFFFF;
+  align-content: center;
+  text-align: center;
+}
+content div h2 {
+  color: #3fbca6;
+  font-size: 2rem;
+  padding: 1%;
+}
+@media (max-width:500px) {
+  content div h2 {
+    font-size: 1.6rem;
+  }
+}
+content div h3 {
+  color: #c9e8a2;
+  font-size: 1.5rem;
+}
+content div li {
+  font-size: 1.4rem;
+  padding: 1%;
+  font-style: italic;
+}
 a {
   color: #c9e8a2;
 }

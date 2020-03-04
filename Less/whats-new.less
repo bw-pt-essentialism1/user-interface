@@ -1,0 +1,26 @@
+content div{
+    display:flex;
+    width:90%;
+    margin:auto;
+    flex-direction:column;
+    color:@text;
+    align-content: center;
+    text-align: center;
+    h2{
+        color:@button;
+        font-size:2rem;
+        padding:1%;
+        @media(@mobile){
+            font-size:1.6rem;
+        }
+    }
+    h3{
+        color:@links;
+        font-size: 1.5rem;
+    }
+    li{
+       font-size: 1.4rem;
+       padding:1%;
+       font-style:italic;
+    }
+}
