@@ -10,6 +10,11 @@ nav{
     padding-top:.4rem;
     border-bottom:dotted @form-field .2rem;
     // height:8%;
+    @media(@mobile){
+        flex-direction: column-reverse;
+        // justify-content: flex-start;
+        
+    }
     div{
         display:flex;
         flex-direction: column;
@@ -17,6 +22,14 @@ nav{
         
         .button{
             font-size:1.8rem;
+        }
+        @media(@mobile){
+            align-self:center;
+            padding-top:4%;
+            padding-bottom: 15px;
+            
+            
+
         }
     }
     img{
@@ -34,6 +47,7 @@ nav{
         text-align: center;
         text-decoration: none;
         align-content: center;
+        
         &:hover{
             color:@form-field;
         }
