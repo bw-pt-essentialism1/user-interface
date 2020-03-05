@@ -145,6 +145,11 @@ table {
 .button:hover {
   color: #E2e2e2;
 }
+@media (min-width: 500px) {
+  #menu {
+    display: none;
+  }
+}
 body {
   background-color: #1d2124;
 }
@@ -158,6 +163,12 @@ body {
   margin: auto;
   background-color: #1d2124;
   color: #FFFFFF;
+}
+@media (max-width:500px) {
+  .content {
+    width: 100%;
+    padding-top: 10vh;
+  }
 }
 .product {
   display: flex;
@@ -267,6 +278,11 @@ nav {
   padding-top: 0.4rem;
   border-bottom: dotted #E2e2e2 0.2rem;
 }
+@media (max-width:500px) {
+  nav {
+    flex-direction: column-reverse;
+  }
+}
 nav div {
   display: flex;
   flex-direction: column;
@@ -274,6 +290,13 @@ nav div {
 }
 nav div .button {
   font-size: 1.8rem;
+}
+@media (max-width:500px) {
+  nav div {
+    align-self: center;
+    padding-top: 4%;
+    padding-bottom: 15px;
+  }
 }
 nav img {
   padding: 1% 0;
@@ -382,6 +405,7 @@ nav a .button {
   .person-container {
     flex-direction: column;
     width: 100%;
+    padding-top: 10vh;
   }
 }
 content div {
@@ -392,6 +416,13 @@ content div {
   color: #FFFFFF;
   align-content: center;
   text-align: center;
+  background: #1d2124;
+}
+@media (max-width:500px) {
+  content div {
+    width: 100%;
+    padding-top: 15vh;
+  }
 }
 content div h2 {
   color: #45E1C5;
@@ -411,6 +442,103 @@ content div li {
   font-size: 1.4rem;
   padding: 1%;
   font-style: italic;
+}
+@media (max-width:500px) {
+  .coming-soon {
+    padding-top: 5%;
+  }
+}
+body {
+  background: #1d2124;
+}
+@media (max-width:500px) {
+  input#menu {
+    display: none;
+  }
+  .icon {
+    background: #1d2124;
+    cursor: pointer;
+    display: block;
+    height: 24px;
+    padding: 16px;
+    width: 24px;
+  }
+  label.icon {
+    position: fixed;
+    z-index: 200;
+  }
+  .icon .menu,
+  .icon .menu::before,
+  .icon .menu::after {
+    background: #E2e2e2;
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    transition: background ease 0.3s, top ease 0.3s 0.3s, transform ease 0.3s;
+    width: 20px;
+  }
+  .icon:hover .menu,
+  .icon:hover .menu::before,
+  .icon:hover .menu::after {
+    background: #47B74B;
+  }
+  .icon .menu {
+    left: 18px;
+    top: 27px;
+  }
+  .icon .menu::before {
+    top: -6px;
+  }
+  .icon .menu::after {
+    top: 6px;
+  }
+  #menu:checked + .icon .menu {
+    background: transparent;
+  }
+  #menu:checked + .icon .menu::before {
+    transform: rotate(45deg);
+  }
+  #menu:checked + .icon .menu::after {
+    transform: rotate(-45deg);
+  }
+  #menu:checked + .icon .menu::before,
+  #menu:checked + .icon .menu::after {
+    top: 0;
+    transition: top ease 0.3s, transform ease 0.3s 0.3s;
+  }
+  nav {
+    background: #1d2124;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 10px;
+    width: 100%;
+    padding-top: 60px;
+    position: fixed;
+    transition: height ease 0.6s;
+    z-index: 100;
+    overflow: hidden;
+  }
+  /*when menu selected, change the height of nav to 40vh*/
+  #menu:checked ~ nav {
+    height: 40vh;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav li {
+    cursor: pointer;
+    display: block;
+    line-height: 60px;
+    padding-left: 16px;
+    white-space: nowrap;
+  }
+  nav i {
+    color: #1d2124;
+    margin-right: 24px;
+    vertical-align: text-bottom;
+  }
 }
 a {
   color: #c9e8a2;

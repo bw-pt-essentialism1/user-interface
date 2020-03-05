@@ -1,3 +1,8 @@
+#menu {
+    @media (min-width:500px){
+        display:none;
+    }
+}
 body{
     background-color: @background;
 }
@@ -8,6 +13,10 @@ body{
     width:80%;
     max-width:1080px;
     .desktop-div();
+    @media(@mobile){
+        width:100%;
+        padding-top:10vh;
+    }
     
     
 }

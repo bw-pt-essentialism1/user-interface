@@ -6,6 +6,11 @@ content div{
     color:@text;
     align-content: center;
     text-align: center;
+    background:@background;
+    @media(@mobile){
+        width:100%;
+        padding-top:15vh;
+    }
     h2{
         color:@button;
         font-size:2rem;
@@ -23,4 +28,13 @@ content div{
        padding:1%;
        font-style:italic;
     }
+}
+
+.coming-soon{
+    @media(@mobile){
+        padding-top:5%;
+    }
+}
+body{
+    background: @background;
 }
