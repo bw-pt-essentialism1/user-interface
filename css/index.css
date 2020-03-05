@@ -135,7 +135,7 @@ table {
   color: #FFFFFF;
 }
 .button {
-  background-color: #3fbca6;
+  background-color: #45E1C5;
   font-weight: bold;
   padding: 1% 7%;
   border-radius: 60px;
@@ -163,6 +163,14 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+.product img {
+  max-height: 667px;
+}
+@media (max-width:500px) {
+  .product img {
+    width: 100%;
+  }
 }
 .product a {
   display: flex;
@@ -207,12 +215,18 @@ body {
   padding: 2%;
 }
 .product div h1 {
+  color: #45E1C5;
   margin: auto;
   padding: 2%;
   font-size: 2.4rem;
 }
 .product div p {
   margin: auto;
+}
+@media (max-width:500px) {
+  .product div p {
+    text-align: center;
+  }
 }
 .product div a {
   width: 30%;
@@ -319,7 +333,7 @@ nav a .button {
   font-size: 2.4rem;
   padding: 2%;
   padding-bottom: 5%;
-  color: #3fbca6;
+  color: #E2e2e2;
   text-align: center;
 }
 .person-container .person h3 {
@@ -336,7 +350,7 @@ nav a .button {
 .person-container .person a {
   display: block;
   text-align: center;
-  background-color: #3fbca6;
+  background-color: #45E1C5;
   font-weight: bold;
   padding: 1% 7%;
   border-radius: 60px;
@@ -380,7 +394,7 @@ content div {
   text-align: center;
 }
 content div h2 {
-  color: #3fbca6;
+  color: #45E1C5;
   font-size: 2rem;
   padding: 1%;
 }

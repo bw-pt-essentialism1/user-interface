@@ -15,7 +15,12 @@ body{
     display:flex;
     flex-direction:row;
     justify-content: space-around;
-    
+    img{
+        max-height:667px;
+        @media(@mobile){
+            width:100%;
+        }
+    }
     a{
         display:flex;
         width:50%;
@@ -38,6 +43,7 @@ body{
         flex-direction:column;
         margin-top:5%;
         width:50%;
+        // align-content: center;
         @media(@mobile){
             width:80%;
         }
@@ -54,6 +60,7 @@ body{
             align-content: center;
         }
         h1{
+            color:@button;
             margin:auto;
             padding:2%;
             font-size:2.4rem;
@@ -61,6 +68,9 @@ body{
         }
         p{
             margin:auto;
+            @media(@mobile){
+                text-align: center;
+            }
         }
         a{
             width:30%;
