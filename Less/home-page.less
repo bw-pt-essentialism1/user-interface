@@ -50,8 +50,9 @@ body{
         display:flex;
         margin:auto;
         flex-direction:column;
-        margin-top:5%;
+        // margin-top:5%;
         width:50%;
+        justify-content: flex-start;
         // align-content: center;
         @media(@mobile){
             width:80%;
@@ -72,21 +73,27 @@ body{
             color:@button;
             margin:auto;
             padding:2%;
-            font-size:2.4rem;
+            // font-size:2.4rem;
             // font-weight:;
+            @media(@mobile){
+                font-size:3.6rem;
+                padding-top: .5em;
+            }
         }
         p{
             margin:auto;
+            text-align: center;
             @media(@mobile){
                 text-align: center;
             }
         }
         a{
-            width:30%;
+            width:50%;
             margin:auto;
             text-align: center;
             margin-top:4%;
-            font-size:1.4rem;
+            // font-size:1.4rem;
+            padding:2.5%;
             @media(max-width:500px){
                 width:75%;
                 margin-bottom:3%;
